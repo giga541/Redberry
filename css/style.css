@@ -1,0 +1,177 @@
+/* Left Page */
+.top-header {
+    position: absolute;
+    width: 923px;
+    height: 84px;
+    left: 0px;
+    top: 0px;
+
+    background: #7025FB;
+}
+
+.knight-cup-logo {
+    position: absolute;
+    left: 6.5%;
+    right: 63.62%;
+    top: 35.71%;
+    bottom: 36.49%;
+}
+
+.knight-cup-icon {
+    position: absolute;
+    left: 0%;
+    right: 94.68%;
+    top: 1.75%;
+    bottom: 19.74%;
+}
+
+.knight-cup-text {
+    position: absolute;
+    width: 252.82px;
+    height: 23.35px;
+    left: 22.93px;
+    top: 0px;
+}
+
+/* Backgrounds */
+.background {
+    position: absolute;
+    width: 923px;
+    height: 996px;
+    left: 0px;
+    top: 84px;
+}
+
+.background-red {
+    position: absolute;
+    width: 997px;
+    height: 1080px;
+    left: 923px;
+    top: 0px;
+
+    background: #FD5334;
+}
+
+.background-landing {
+    background: url(../assets/images/landing-page-photo.png);
+}
+
+
+/* Headers */
+.landing-header-1 {
+    position: absolute;
+    width: 496px;
+    height: 109px;
+    left: 1008px;
+    top: 265px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 109px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+
+.landing-header-2 {
+    position: absolute;
+    width: 570px;
+    height: 109px;
+    left: 1008px;
+    top: 390px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 109px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.landing-header-small {
+    position: absolute;
+    width: 136px;
+    height: 27px;
+    left: 1530px;
+    top: 306px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #212529;
+}
+
+
+/* Buttons */
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 13px 24px;
+    gap: 10px;
+    border: none;
+    /* background: none; */
+    background: #212529;
+    border-radius: 8px;
+}
+
+
+.btn-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+    flex: none;
+    order: 0;
+
+}
+
+.btn-text {
+    height: 27px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: capitalize;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+.btn-arrow {
+    width: 24px;
+    height: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.get-started-btn {
+    position: absolute;
+    left: 1008px;
+    top: 601px;
+    width: 143px;
+
+    background: #212529;
+    color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.get-started-btn:hover, .next-btn:hover {
+    border: 4px solid rgba(194, 165, 249, 0.8);
+    margin-left: -4px;
+    margin-top: -4px;
+    border-radius: 8px;
+    cursor: pointer;
+}
