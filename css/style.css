@@ -381,3 +381,112 @@
     left: 235px;
     top: 44px;
 }
+
+/* Form  */
+.form-header {
+    position: absolute;
+    width: 328px;
+    height: 48px;
+    left: 971px;
+    top: 324px;
+    
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    /* identical to box height, or 48px */
+    
+    
+    color: #000000;    
+}
+
+.form-subheader {
+    position: absolute;
+    width: 205px;
+    height: 21px;
+    left: 971px;
+    top: 375px;
+    
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    /* identical to box height, or 21px */
+    
+    text-transform: capitalize;
+    
+    color: #95939A;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 775px;
+    height: 304px;
+    left: 971px;
+    top: 481px;
+}
+
+/* Text Input */
+.text-input {
+    display: flex;
+    align-items: flex-start;
+
+    width: 743px;
+    height: 30px;
+    padding: 8px 16px;
+
+    background: rgba(255, 255, 255, 1e-06);
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+
+    color: #212529;
+    border: 0;
+
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+    border-radius: 4px;
+}
+
+.text-input:hover {
+    background: #F8F9FA;
+}
+
+.text-input:active {
+    background: #E9ECEF;
+}
+
+.text-input.invalid-input {
+    background: #FFEFEF;
+    color: #DC3545;
+}
+
+.text-input.invalid-input::placeholder {
+    background: #FFEFEF;
+    color: #DC3545;
+}
+
+.text-input:focus {
+    outline: none;
+}
+
+.text-input {
+    border: 0
+}
+
+.personal-info-form {
+    gap: 40px;
+}
