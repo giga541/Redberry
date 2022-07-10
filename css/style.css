@@ -55,6 +55,10 @@
 .background-landing {
     background: url(../assets/images/landing-page-photo.png);
 }
+
+.background-registration-personal {
+    background: url(../assets/images/registration-personal-page-photo.png);
+}
 .background-registration-personal {
     background: url(../assets/images/registration-personal-page-photo.png);
 }
@@ -162,6 +166,42 @@
     text-transform: uppercase;
     color: #E5E6E8;
 }
+.registration-experience-page-text {
+    position: absolute;
+    width: 615px;
+    height: 83px;
+    left: 117px;
+    top: 281px;
+    
+    font-family: 'Nunito';
+    font-style: italic;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 35px;
+    text-transform: uppercase;
+    
+    color: #212529;
+}
+
+.registration-experience-page-text-author {
+    position: absolute;
+    width: 266px;
+    height: 33px;
+    left: 466px;
+    top: 396px;
+    
+    font-family: 'Nunito';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    /* identical to box height */
+    
+    text-transform: uppercase;
+    
+    color: #093F68;
+}
+
 .line {
     position: absolute;
     width: 998px;
