@@ -59,11 +59,10 @@
 .background-registration-personal {
     background: url(../assets/images/registration-personal-page-photo.png);
 }
-.background-registration-personal {
-    background: url(../assets/images/registration-personal-page-photo.png);
+
+.background-registration-experience {
+    background: url(../assets/images/registration-experience-page-photo.png);
 }
-
-
 
 /* Headers */
 .landing-header-1 {
@@ -82,7 +81,6 @@
 
     color: #FFFFFF;
 }
-
 
 .landing-header-2 {
     position: absolute;
@@ -114,9 +112,9 @@
     font-size: 20px;
     line-height: 27px;
     text-transform: uppercase;
+
     color: #212529;
 }
-
 
 .registration-header {
     position: absolute;
@@ -163,9 +161,13 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 33px;
+    /* identical to box height */
+    
     text-transform: uppercase;
+    
     color: #E5E6E8;
 }
+
 .registration-experience-page-text {
     position: absolute;
     width: 615px;
@@ -211,7 +213,6 @@
     margin: -1px;
     border-top: 1px solid rgba(185, 180, 196, 0.3);
 }
-
 
 /* Buttons */
 .btn {
@@ -271,13 +272,6 @@
     border-radius: 8px;
 }
 
-.get-started-btn:hover, .next-btn:hover {
-    border: 4px solid rgba(194, 165, 249, 0.8);
-    margin-left: -4px;
-    margin-top: -4px;
-    border-radius: 8px;
-    cursor: pointer;
-}
 .next-btn {
     position: absolute;
     left: 1618px;
@@ -313,7 +307,6 @@
     background: rgba(185, 180, 196, 0.3);
     border: 1px solid rgba(194, 165, 249, 0.8);
 }
-
 
 /* Steps */
 .steps {
@@ -529,4 +522,234 @@
 
 .personal-info-form {
     gap: 40px;
+}
+
+.experience-form {
+    gap: 88px;  
+}
+
+
+
+/* Select */
+.select-row {
+    display: flex;
+}
+
+.select-menu.character {
+    margin-left: 23px;
+}
+
+.select-menu{
+    position: relative;
+    z-index: 1;
+}
+.select-menu .select-btn{
+    width: 312px;
+    height: 30px;
+    background: #FFFFFF;
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+    border-radius: 4px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #212529;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    padding: 8px 64px 8px 16px;
+}
+
+.select-btn i{
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.select-menu .arrow-icon {
+    position: absolute;
+    right: 20px;
+    width: 14px;
+    height: 8px;
+    top: 19px;
+    bottom: 19px;
+    background: url(../assets/icons/select-arrow-down.svg);
+}
+
+.select-menu .arrow-icon.up {
+    background: url(../assets/icons/select-arrow-up.svg);
+}
+
+.select-menu:hover {
+    cursor: pointer;
+} 
+
+.select-menu.active .select-btn i{
+    transform: rotate(-180deg);
+}
+
+.select-menu .options-wrapper {
+    position: relative;
+}
+
+.select-menu .options{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 392px;
+
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(185, 180, 196, 0.3);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    display: none;
+
+    list-style-type: none;
+    padding-inline-start: 0;
+    padding: 20px 0;
+}
+.select-menu.active .options{
+    display: block;
+}
+.options .option{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+
+    color: #000000;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+}
+
+.options .option:hover{
+    background: #F7F7F9;
+    font-weight: 600;
+}
+.option i{
+    font-size: 25px;
+    margin-right: 12px;
+}
+.option .option-text{
+    font-size: 18px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.character-img {
+    /* width: 100px; */
+    height: 72px;
+}
+
+/* Radio */
+.participation-radio {
+    width: 743px;
+    height: 30px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #212529;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+/* Customize the label (the container) */
+.radio-container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 16px;
+  }
+  
+  /* Hide the browser's default radio button */
+  .radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    box-sizing: border-box;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  
+  .radio-container input:checked ~ .checkmark {
+    
+    border: 5px solid #0D6EFD;
+    
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .radio-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .participation-radio-row {
+      display: flex;
+  }
+
+  .radio-container:not(:first-child) {
+    margin-left: 18px;
+}
+
+.background-onboarding-completed {
+    position: absolute;
+    width: 923px;
+    height: 996px;
+    left: 0px;
+    top: 84px;
+
+    background: url(../assets/images/onboarding-completed-page-photo.png);
+}
+
+.rocket {
+    position: absolute;
+    left: 1201px;
+    top: 416px;
+}
+
+/* Remove increment arrows for number input */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
