@@ -121,15 +121,15 @@ form.onsubmit = (e) => {
     
     if (experienceInfoFormData.experience_level == null) {
         valid = false
-        console.log('Please enter your experience level')
+        
     }
     if (experienceInfoFormData.character_id == null) {
         valid = false
-        console.log('Please choose a character')
+       
     }
     if (experienceInfoFormData.already_participated == null) {
         valid = false
-        console.log('Please select if you have already participated')
+        
     }
 
     if (valid) {
